@@ -1,0 +1,26 @@
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px 40px;
+}
+
+.title {
+    text-align: left;
+}
+
+.links {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+
+    text-align: right;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links > li:not(:first-child) {
+    margin-left: 40px;
+}
