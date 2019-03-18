@@ -1,0 +1,5 @@
+.home {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    padding: 0 40px;
+}
