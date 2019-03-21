@@ -43,15 +43,15 @@ class FilterToggle extends Component {
 }
 
 class BioFilters extends Component {
-  render() {
-    return (
-      <div className="wrapper">
-        <p>I'm a</p>
-        {filters.map(filter => <FilterToggle key={filter.name} {...filter}/>)}
-        <p>living in Portland, Oregon.</p>
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div className="wrapper">
+                <p>I'm a</p>
+                {filters.map(filter => <FilterToggle key={filter.name} {...filter}/>)}
+                <p>living in Portland, Oregon.</p>
+            </div>
+        )
+    }
 }
 
 export default BioFilters

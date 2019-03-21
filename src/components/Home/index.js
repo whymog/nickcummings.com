@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import BioFilters from '../BioFilters'
+import { WhatIDo } from '../WhatIDo'
 import './style.css'
 
 class Home extends Component {
@@ -7,7 +8,7 @@ class Home extends Component {
     return (
       <div className="home">
         <BioFilters />
-        <div></div>
+        <WhatIDo />
         <div></div>
       </div>
     )
