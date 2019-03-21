@@ -25,7 +25,7 @@ const filters = [
     },
 ]
 
-class FilterButton extends Component {
+class FilterToggle extends Component {
     static propTypes = {
         name: PropTypes.string,
         displayName: PropTypes.string,
@@ -47,7 +47,7 @@ class BioFilters extends Component {
     return (
       <div className="wrapper">
         <p>I'm a</p>
-        {filters.map(filter => <FilterButton key={filter.name} {...filter}/>)}
+        {filters.map(filter => <FilterToggle key={filter.name} {...filter}/>)}
         <p>living in Portland, Oregon.</p>
       </div>
     )
