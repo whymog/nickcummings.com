@@ -23,13 +23,20 @@ body {
   grid-row-gap: 16px;
 }
 
+.item img {
+  float: left;
+  max-width: 80px;
+  height: auto;
+  margin-right: 40px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .mainList {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .mainList {
     grid-template-columns: 1fr;
     grid-row-gap: 0;
@@ -37,6 +44,10 @@ body {
 
   .item {
     padding: 8px 0;
+  }
+
+  .item img {
+    max-width: 64px;
   }
 }
 
@@ -65,13 +76,6 @@ body {
   font-family: "Lora", serif;
   font-style: italic;
   letter-spacing: 0;
-}
-
-.item img {
-  float: left;
-  max-width: 50px;
-  height: auto;
-  margin-right: 40px;
 }
 
 .description {
